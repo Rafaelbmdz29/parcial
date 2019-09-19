@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { GrupobRoutingModule } from './grupob-routing.module';
-import { GrupobComponent } from '../grupob.component';
+import { GrupobComponent } from './grupob.component';
 import { Componente6Component } from './componente6/componente6.component';
 import { Componente7Component } from './componente7/componente7.component';
 import { Componente8Component } from './componente8/componente8.component';
