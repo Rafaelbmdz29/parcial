@@ -1,22 +1,21 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { GrupoaComponent } from './grupoa/grupoa.component';
-import { GrupobComponent } from './grupob/grupob.component';
+import {AppComponent} from './app.component';
 
 export const routes: Routes = [{
-  path: 'grupoa',
-  component: GrupoaComponent,
+  path: 'app',
+  component: AppComponent,
   children: [
-    {path: '', loadChildren: './grupoa/grupoa.module#GrupoaModule',}
-  ]},
-  {
-    path: 'grupob',
-    component: GrupobComponent,
-    children: [
-      { path: '', loadChildren: './grupob/grupob.module#GrupobModule', }
-    ]
-  }
-
+    {
+      path: 'grupoa',
+      loadChildren: './grupoa/grupoa.module#GrupoaModule'
+    },
+    {
+      path: 'grupob',
+      loadChildren: './grupob/grupob.module#GrupobModule'
+    }
+  ]
+}
 ];
 
 @NgModule({

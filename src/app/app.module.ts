@@ -5,10 +5,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GrupoaComponent } from './grupoa/grupoa.component';
 import { GrupobComponent } from './grupob/grupob.component';
+import {BrowserModule} from '@angular/platform-browser';
 
 @NgModule({
   declarations: [AppComponent,  GrupoaComponent, GrupobComponent],
-  imports: [CommonModule, AppRoutingModule],
+  imports: [BrowserModule, CommonModule, AppRoutingModule],
    providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
